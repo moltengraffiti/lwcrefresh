@@ -1,0 +1,15 @@
+
+
+.greeting-class{
+    background: green;
+}
+
+div{
+    border: 3px solid blue;
+}
+
+/* This looks awful */
+:host{
+    background:blue;
+    border: 4px solid black;
+}

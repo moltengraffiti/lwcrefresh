@@ -1,0 +1,11 @@
+<template>
+    <!-- <div id="hello">Hello outside card</div> -->
+    <lightning-card title="Hello World LWC">
+        <lightning-input placeholder="World" label="Enter greeting" onchange={greetingChangeHandler}></lightning-input>
+        <div class="greeting-class">Hello {dynamicGreeting}</div>
+        <div>Divvy1</div>
+        <div>Divvy2</div>
+    </lightning-card>
+</template>
+
+<!-- /* Don't use id selectors, they get changed at render */ -->
