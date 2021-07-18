@@ -9,5 +9,15 @@
         <template if:false={displayDiv}>
             <div>I am not here</div>
         </template>
+
+        <template for:each={cityList} for:item="city">
+            <p key={city}>{city}</p>
+        </template>
+
+        <!-- Benefits of iterator is that we can identify first and last elements -->
+        <h1>This is an example of iterator directive</h1>
+        <template iterator:it={cityList}>
+            <p key={it.value}>{it.value}</p>
+        </template>
     </lightning-card>
 </template>
